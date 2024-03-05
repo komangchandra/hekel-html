@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hek HTML</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+  </head>
+  <body class="bg-primary text-white">
+    <div id="container" class="container">
+      <div class="mt-5">
+        <h1 class="d-flex justify-content-center ">Login Pesbuk Kamu</h1>
+        <div class="row d-flex justify-content-center mb-3">
+          <div class="col-lg-4">
+            <label for="noHp" class="form-label">Nomor watsap</label>
+            <input type="text" id="noHp" class="form-control" />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mb-3">
+          <div class="col-lg-4">
+            <label for="paswot" class="form-label">Paswot</label>
+            <input type="password" id="paswot" class="form-control" />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mb-3">
+          <div class="col-lg-4">
+            <button id="ok" type="submit" class="btn btn-light">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hasil" class="container pb-5 mt-5 d-none">
+      <h1 class="d-flex justify-content-center mt-5 pt-5">Hello World</h1>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <script>
+      const container = document.getElementById('container');
+      const hasil = document.getElementById('hasil');
+      const ok = document.getElementById('ok');
+
+      ok.addEventListener('click', function() {
+        // Tambahkan kelas 'd-none' dari elemen dengan id 'container'
+        container.classList.add('d-none');
+        // Hapus kelas 'd-none' dari elemen dengan id 'hasil'
+        hasil.classList.remove('d-none');
+      });
+    </script>
+  </body>
+</html>
